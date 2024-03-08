@@ -29,11 +29,14 @@ body {
 .container .card::before {
   content: '';
   position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%);
   background: radial-gradient(var(--clr), transparent, transparent);
   width: 300px;
   height: 300px;
   opacity: 0;
-  transition: .5s;
+  transition: .4s, top 0s, left 0s;
 }
 
 .container .card:hover::before {
