@@ -23,4 +23,15 @@ body {
   width: 150px;
   height: 150px;
   background: rgba(45, 45, 45, 1);
+  overflow: hidden;
 }
+
+.container .card::before {
+  content: '';
+  position: absolute;
+  background: radial-gradient(var(--clr), transparent, transparent);
+  width: 300px;
+  height: 300px;
+  opacity: 0;
+}
+
